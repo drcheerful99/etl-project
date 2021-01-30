@@ -2,11 +2,37 @@
 
 Group 3 Proposal - updated Wednesday, Jan. 27, 2021
 
-Overall, we have finished the project.  
+
+## ========== ETL PROJECT SUMMARY ========= ##
+Hi Sean,
+
+Here is a quick summary of the ETL Project you requested. 
+
+## Purpose:
+The purpose of this project was to demonstrate the process of  extracting, transforming, and loading the source data from the sources of the differnet formats (.csv, .json, etc) to our targest databse system, which is Postgres.   
+
+##Process: 
+As of Wednesday, Jan. 27, our team have finished the project withinthe timeframe we originally planned, even though the allocated time spent on each step varied from we estimated. 
+
+First, we sourced our world population data from Kaggle, and scraped per capita GDP data from wikipedia and then followed our defined process as discussed to get data into the target system.
+
+Even though we finished the project within the budgeted time, we did spend more time on cleansing/transforming data than we originally planned.  First, we found that the population data contained more information than we needed and decided to focus only on one year (2018) and one data point (aggregated alcohol abuse for both genders). We then joined the two dataframes based a country.   When we tried to loand the data into the target databases, we got system error, which, we later found that there are non-numeric values.  We were able to drop those non-numeric value and load the data successfully. 
+
+## Summary
+Overall, we successfully extracted, transformed and loaded as planned.
+
+## Screenshot and other assets
+Soucre file (.csv) here:  resources
+Screenshots: resources/images/
+
+
+## ========== ORIGINAL PROPOSAL ========= ##
+
+Overall, we have finished the project pretty much within the time we budgeted.  
 
 DATA SETS:
 We’re using this population data from Kaggle: https://www.kaggle.com/utkarshxy/who-worldhealth-statistics-2020-complete?select=alcoholSubstanceAbuse.csv
-And this US Real Estate Listings data from Kaggle: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita
+Data source for alcohol abuse from wikipedia: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita
 
 
 EXTRACT:
